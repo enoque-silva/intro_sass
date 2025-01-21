@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #dfe6e9;
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 
 header {
   padding: 16px 0;
-  background-color: dodgerblue;
+  background-color: #0984e3;
   text-align: center;
 }
 header h1 {
@@ -30,11 +30,19 @@ header h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 720px;
+}
+.form-container h2 {
+  font-size: 2em;
+  text-align: center;
 }
 .form-container form {
   width: 100%;
   max-width: 480px;
   margin-top: 40px;
+}
+.form-container form label {
+  font-weight: bold;
 }
 .form-container form input {
   padding: 8px;
@@ -43,13 +51,28 @@ header h1 {
   margin-bottom: 16px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #0984e3;
 }
 .form-container form button {
   padding: 8px;
   display: block;
   width: 100%;
   margin-bottom: 16px;
+  background-color: #0984e3;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.form-container form button:hover {
+  background-color: rgb(15.9766949153, 145.4915254237, 245.5233050847);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
